@@ -3,23 +3,21 @@ class Gobottle < Formula
   homepage "https://github.com/isometry/gobottle"
   url ""
   sha256 ""
-  license ""
-
-  bottle do
-    root_url "https://ghcr.io/v2/isometry/gobottle"
-    sha256 cellar: :any_skip_relocation, aarch64_linux: "678e4d4b23e9a01f5f5f809c88cfc4eed7c97fb296afd4d07560878f82bed268"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe: "874c93dfef5e717b6adb852e99784574fa82f8f2f7c9f1b865b859140a2b5d36"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "fe1e6dfb1f0e26d51d6aee442835db33a5898d2d296d9f1b8e329d5e5810cff8"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "312f5f33a53973f87b376da66a46aee169a6f1dd95a99ef89c32b9072779c2e1"
-    sha256 cellar: :any_skip_relocation, arm64_ventura: "f83e2080b803c1435768eb55a074041b6117ec843315de45fa45e54d155dd3e3"
-    sha256 cellar: :any_skip_relocation, arm64_monterey: "04eea859d562a3829648105dfa4dc2393dd4d276f86865585685701ced33adfe"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "c1af889405057cb122894d1d2bba1b3a6c545bf6a889412c5508bad2085ed492"
-    sha256 cellar: :any_skip_relocation, tahoe: "aa08bb02937cb17f541592cba875ba4bee672eb12fa6618d225a3614b981c66a"
-    sha256 cellar: :any_skip_relocation, sequoia: "64703978846779b3ccb086b4d56dbc4b64dc688ac27b229ed68f805c7ee222fb"
-    sha256 cellar: :any_skip_relocation, sonoma: "ca6742c72f926463da4e0a9535b3c3eca87aed3d184ea351f658ae38b0990185"
-    sha256 cellar: :any_skip_relocation, ventura: "c4c96fee52ac4c2cb50d6895b9082bbf613886a9a97b6508cc98ffced13ca389"
-    sha256 cellar: :any_skip_relocation, monterey: "e07258b998afa72f93d909c557ab5d5c7b3b64fd97844f06eac469a66e78ee11"
-  end
+  license ""    bottle do
+      root_url "https://ghcr.io/v2/isometry/gobottle"
+      sha256 cellar: :any_skip_relocation, aarch64_linux: "d3bb0508e4278bded608311f5f9e704cb02312cd21891d0d09883c82d3d53123"
+      sha256 cellar: :any_skip_relocation, x86_64_linux: "cd0ad9d41092b66edb87e009b47d7ee65e7011f5d1abee4eda4197fc57118b21"
+      sha256 cellar: :any_skip_relocation, arm64_tahoe: "d16c4fa91aadf58903c652ff36b25816a93449909245bf7c5b9585fddb1dc7d7"
+      sha256 cellar: :any_skip_relocation, arm64_sequoia: "74b0b66753b86deaa9460652b76aada07c5a9c6d473a2f5810455125ecc396e6"
+      sha256 cellar: :any_skip_relocation, arm64_sonoma: "099296c9e95f16bcaafb9c3d7b721a02dd43b45aedec6d6b1d4c749d556f9db0"
+      sha256 cellar: :any_skip_relocation, arm64_ventura: "0784f5c66d0cf0e4ea450db35565840573a7cff0cda9fb059134b141d34c56f1"
+      sha256 cellar: :any_skip_relocation, arm64_monterey: "ca822a5512f6d2137c108b2f1560c416032c45f35c05c088ba5b178f11c09cdd"
+      sha256 cellar: :any_skip_relocation, tahoe: "70f8713f8b9d65086e450e6fc1d5a214932ddec1941498a9952c5bd40c5f0613"
+      sha256 cellar: :any_skip_relocation, sequoia: "70fa82dcc8f70d5407ab2b965e27aad434863f52fd20020903e4f0153913e6c6"
+      sha256 cellar: :any_skip_relocation, sonoma: "98f2b4ae81fa09bd96f52d2070bdc459c83bf7a84ed9be7c37fc3c4fea9f9598"
+      sha256 cellar: :any_skip_relocation, ventura: "c3c34f00e180a458e4d5b1cf7271e02c3992f1331fcfe42889608847d7b76341"
+      sha256 cellar: :any_skip_relocation, monterey: "c840bf730995984b300ffb306c1b0e05ef3e8fb0a471d09c6bc65762a90de7e4"
+    end
 
   def install
     bin.install "gobottle"
